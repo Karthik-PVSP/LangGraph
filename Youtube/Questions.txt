@@ -1,0 +1,18 @@
+Questions 
+Category: Cost Optimization
+1) Does Local LLM support Function calling ?
+2) What are alternative for tavily search api 
+
+
+Category: Functionality
+Tutorial #2 (LangGrah: Agent Executor)
+Input: "What is the weather in Hyderabad india"
+Output:
+    #1) {'agent_outcome': AgentFinish(return_values={'output': "The current weather in Hyderabad, India is as follows:\n- Temperature: 25.3°C (77.5°F)\n- Condition: Mist\n- Wind: 22.0 km/h from the west\n- Pressure: 1007.0 mb\n- Humidity: 74%\n- Cloud Cover: 75%\n- Visibility: 5.0 km (3.0 miles)\n\nPlease note that this information may change, so it's always good to check for the most up-to-date weather."}, log="The current weather in Hyderabad, India is as follows:\n- Temperature: 25.3°C (77.5°F)\n- Condition: Mist\n- Wind: 22.0 km/h from the west\n- Pressure: 1007.0 mb\n- Humidity: 74%\n- Cloud Cover: 75%\n- Visibility: 5.0 km (3.0 miles)\n\nPlease note that this information may change, so it's always good to check for the most up-to-date weather.")}
+    #2) {'agent_outcome': AgentFinish(return_values={'output': 'You can find the long-range weather forecast for Hyderabad, Telangana on this website: [Weather Forecast for Hyderabad, Telangana](https://www.weathertab.com/en/c/2024/07/republic-of-india/telangana/hyderabad/)'}, log='You can find the long-range weather forecast for Hyderabad, Telangana on this website: [Weather Forecast for Hyderabad, Telangana](https://www.weathertab.com/en/c/2024/07/republic-of-india/telangana/hyderabad/)')}----
+    #3) {'agent_outcome': AgentFinish(return_values={'output': 'The weather forecast for Hyderabad, India in July 2024 can be found on the website [World Weather](https://world-weather.info/forecast/india/hyderabad/july-2024/).'}, log='The weather forecast for Hyderabad, India in July 2024 can be found on the website [World Weather](https://world-weather.info/forecast/india/hyderabad/july-2024/).')}
+Conclusion:
+    Failed at reliability Need to check (14-July-2024)
+        1) Data from Tavily for consistency
+        2) Model Eval (gpt-3.5turbo-1106)
+        3) Issue with prompt
